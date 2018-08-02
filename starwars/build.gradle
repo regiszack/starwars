@@ -1,0 +1,74 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.1.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.starwars'
+version '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+bootJar {
+    launchScript()
+}
+
+sourceSets.main.java.srcDirs = []
+sourceSets.main.groovy.srcDirs = ['src/main/groovy', 'src/main/java']
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/milestone" }
+}
+
+ext {
+    springCloudVersion = 'Finchley.M9'
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy'
+
+    compile 'org.springframework.boot:spring-boot-starter-data-rest'
+    compile 'org.springframework.data:spring-data-mongodb'
+    compile 'javax.persistence:javax.persistence-api:2.2'
+    compile 'org.codehaus.jettison:jettison:1.4.0'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'commons-lang:commons-lang:2.6'
+
+    runtime 'org.springframework.boot:spring-boot-devtools'
+
+    compileOnly 'org.projectlombok:lombok'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'junit:junit:4.12'
+
+    testCompile 'org.spockframework:spock-spring:1.1-groovy-2.4'
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+
+    testCompile "org.powermock:powermock-api-mockito2:2.0.0-beta.5"
+    testCompile "org.powermock:powermock-module-junit4:2.0.0-beta.5"
+
+    testCompile 'cglib:cglib-nodep:3.2.6'
+
+    testCompile 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}

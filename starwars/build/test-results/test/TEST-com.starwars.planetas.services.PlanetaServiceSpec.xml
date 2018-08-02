@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.starwars.planetas.services.PlanetaServiceSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-08-02T18:11:53" hostname="Regis-DEV" time="1.201">
+  <properties/>
+  <testcase name="criarESalvar(): Quando o planeta não existe na base de dados" classname="com.starwars.planetas.services.PlanetaServiceSpec" time="1.173"/>
+  <testcase name="criarESalvar(): Quando já existe o planeta" classname="com.starwars.planetas.services.PlanetaServiceSpec" time="0.01"/>
+  <testcase name="obterPlanetas()" classname="com.starwars.planetas.services.PlanetaServiceSpec" time="0.008"/>
+  <testcase name="obterPlanetaPorId()" classname="com.starwars.planetas.services.PlanetaServiceSpec" time="0.004"/>
+  <testcase name="obterPlanetaPorNome()" classname="com.starwars.planetas.services.PlanetaServiceSpec" time="0.005"/>
+  <system-out><![CDATA[15:11:53.581 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "https://swapi.co/api/planets/?search=Tatooine"
+15:11:53.582 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+15:11:54.468 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "https://swapi.co/api/planets/?search=Tatooine" resulted in 200 (OK)
+15:11:54.470 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [java.lang.String] as "application/json" using [org.springframework.http.converter.StringHttpMessageConverter@2fc5caf1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

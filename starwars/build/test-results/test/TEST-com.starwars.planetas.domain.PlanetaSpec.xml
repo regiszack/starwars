@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.starwars.planetas.domain.PlanetaSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-08-02T18:11:53" hostname="Regis-DEV" time="0.198">
+  <properties/>
+  <testcase name="Testa constraints do campo nome para o valor null" classname="com.starwars.planetas.domain.PlanetaSpec" time="0.158"/>
+  <testcase name="Testa constraints do campo clima para o valor null" classname="com.starwars.planetas.domain.PlanetaSpec" time="0.002"/>
+  <testcase name="Testa constraints do campo terreno para o valor null" classname="com.starwars.planetas.domain.PlanetaSpec" time="0.001"/>
+  <testcase name="Testa constraints do campo aparicoes para o valor null" classname="com.starwars.planetas.domain.PlanetaSpec" time="0.001"/>
+  <testcase name="Domínio válido" classname="com.starwars.planetas.domain.PlanetaSpec" time="0.023"/>
+  <system-out><![CDATA[15:11:53.052 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:11:53.052 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:11:53.053 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Unable to load or instantiate JPA aware resolver org.hibernate.validator.internal.engine.resolver.JPATraversableResolver. All properties will per default be traversable.
+15:11:53.053 [Test worker] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:11:53.053 [Test worker] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:11:53.054 [Test worker] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:11:53.054 [Test worker] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:11:53.060 [Test worker] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+15:11:53.060 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+15:11:53.060 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+15:11:53.060 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+15:11:53.060 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+15:11:53.060 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+15:11:53.204 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - ValidationMessages not found.
+15:11:53.206 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - ContributorValidationMessages not found.
+15:11:53.209 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+15:11:53.226 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - ValidationMessages not found.
+15:11:53.226 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - ContributorValidationMessages not found.
+15:11:53.226 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
